@@ -16,7 +16,7 @@ hexo部署上去github上面的是存放着的静态资源文件，而如果想�
 
 ![Markdown](http://i2.muimg.com/1949/b26128e044370454.png)
 #### 确认配置hexo deploy参数
-为了保证 hexo d 命令可以正确部署到 master 分支，在hexo 的配置文件 _config.yml 文件中配置参数如下：
+为了保证 hexo d 命令可以正确部署到 master 分支，在hexo 的配置文件 <span id="inline-green">_config.yml</span> 文件中配置参数如下：
 ```
 deploy:
   type: git
