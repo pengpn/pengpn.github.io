@@ -46,7 +46,7 @@ index_with_subtitle: false
 menu:
   home: /
   #categories: /categories
-  #about: /about
+  about: /about
   archives: /archives
   tags: /tags
   #sitemap: /sitemap.xml
@@ -159,7 +159,7 @@ social_icons:
   GitHub: github
   Twitter: twitter
   Weibo: weibo
-  Zhihu: zhihu
+  Zhihu: globe
 
 
 # Sidebar Avatar
@@ -322,7 +322,7 @@ disqus:
 
 # changyan
 changyan:
-  enable: false
+  enable: true
   appid:
   appkey:
 
