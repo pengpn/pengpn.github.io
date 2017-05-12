@@ -78,6 +78,79 @@ deploy:
 - 文件名为CNAME(注意：没有扩展名)，文件内容为个人域名(注意：没有http://，没有www)，然后选择下方的Commit new file按钮。然后在浏览器端重新输入我们的域名，我们可以看到域名绑定成功：
 ![](http://i1.piimg.com/588926/64845a166756a19b.png)
 
+### 六、书写文章
+#### 新建文章和新建页面
+```
+hexo new "title"  # 生成新文章：\source\_posts\title.md
+hexo new page "title"  # 生成新的页面，后面可在主题配置文件中配置页面
+```
+生成文章或页面的模板放在博客文件夹根目录下的 scaffolds/ 文件夹里面，文章对应的是 post.md ，页面对应的是page.md，草稿的是draft.md
+###编辑文章  
+打开\source\_posts\对应的名字.md 例如这里就是title.md
+```
+ ---
+ title: 使用hexo和github搭建个人博客
+date: 2017-05-10 22:16:19
+tags: #hexo #github
+---
+ #这里开始使用markdown格式输入你的正文。
+<!--more--> 
+#more标签以下的内容要点击“阅读全文”才能看见，#more标签以上的内容为你首页显示文章的摘要部分
+```
+
+### 常用命令总结
+> hexo init [folder] # 初始化一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站
+hexo new [layout] <title> # 新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来
+hexo version # 查看版本
+hexo clean # 清除缓存文件 (db.json) 和已生成的静态文件 (public)
+hexo g # 等于hexo generate # 生成静态文件
+hexo s # 等于hexo server # 本地预览
+hexo d # 等于hexo deploy # 部署，可与hexo g合并为 hexo d -g
+
+## 七、安装主题
+### 热门主题
+- [iissnan/hexo-theme-next](https://github.com/iissnan/hexo-theme-next)， 7859个star。
+- [litten/hexo-theme-yilia](https://github.com/litten/hexo-theme-yilia)， 3398个star。
+- [TryGhost/Casper](https://github.com/TryGhost/Casper)， 901个star。
+- [wuchong/jacman](https://github.com/wuchong/jacman)， 767个star。
+- [A-limon/pacman](https://github.com/A-limon/pacman)， 501个star。
+- [daleanthony/uno](https://github.com/daleanthony/uno)， 467个star。
+- [orderedlist/modernist](https://github.com/orderedlist/modernist)， 394个star。
+### 主题下载
+把下来的文件夹解压和更名为next，并复制到theme目录下
+### 配置文件
+- 在根目录下的_config.yml主要是对网站的总属性进行设置
+如：网站标题，网站logo,网站插件使用等全局的属性
+- 主题目录下的_config.yml主要是针对网站的布局，导航等特性设置进行设置
+### 启用主题
+打开站点配置文件_config.yml， 找到 theme 字段，并将其值更改为 next
+```
+theme: next
+```
+**注意:后有个空格必须要有空格哦**
+然后 hexo s 即可在localshost:4000地址里预览主题效果
+### 更换主题外观
+next主题有三个样式
+```
+# Schemes
+#scheme: Muse
+scheme: Mist
+#scheme: Pisces
+```
+### 更换语言
+更换语言为中文，在根目录配置文件下配置language: zh-Hans
+```
+# Site
+title: PENGPN
+subtitle: 生活、技术个人博客
+description: Think
+author: PENGPN
+language: zh-Hans
+timezone:
+```
+### 更多设置
+大部分的设定都能在NexT的官方文档 里面找到，如侧栏、头像、打赏、评论、订阅、连接、分享、数据统计等等，在此就不多讲了，照着文档走就行了，接下只是个性定制的问题。
+http://theme-next.iissnan.com/getting-started.html
 
 
 ### 参考
