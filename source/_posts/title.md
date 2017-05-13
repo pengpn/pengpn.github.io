@@ -4,6 +4,7 @@ date: 2017-05-10 22:16:19
 tags: [hexo,github]
 comments: true
 ---
+<p id="div-border-left-blue">提示：本篇文章将介绍如何使用 heox和github 搭建个人博客</p>
 ## 使用hexo和github搭建个人博客
 ### 一、安装git
 ### 二、安装node.js
@@ -20,14 +21,14 @@ npm install -g cnpm --registry=https://registry.npm.taobao.org
 
 ### 三、安装Hexo
 - 在任意位置点击鼠标右键，选择Git Bash。
-- npm install -g hexo-cli 或者 cnpm install -g hexo-cli  
+- `npm install -g hexo-cli` 或者 `cnpm install -g hexo-cli`
 注意：-g是指全局安装hexo。
 - 自己新建一个hexo文件夹，例如我就在E:/hexo，  
-在此目录下执行hexo init /** 创建一个Hexo的新框架 **/
-- 执行hexo generate #生成静态文档
-- 执行hexo server #运行本地服务  
+在此目录下执行`hexo init` /** 创建一个Hexo的新框架 **/
+- 执行`hexo generate` #生成静态文档
+- 执行`hexo server` #运行本地服务  
 访问localhost:4000 可以看到静态页面。  
-如果不能访问，那就是其他占用了4000这个端口，hexo默认端口4000，如果你的电脑安装了福昕阅读器，，就是他。此时可以使用hexo server -p 5000切换端口，访问localhost:5000即可。
+如果不能访问，那就是其他占用了4000这个端口，hexo默认端口4000，如果你的电脑安装了福昕阅读器，，就是他。此时可以使用`hexo server -p 5000`切换端口，访问localhost:5000即可。
 ![](http://i2.muimg.com/588926/1fb1b71ee4564a77.png)
 
 ```

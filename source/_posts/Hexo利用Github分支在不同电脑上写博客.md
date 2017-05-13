@@ -4,6 +4,7 @@ date: 2017-05-12 21:34:47
 tags: [hexo,github]
 comments: true
 ---
+<p id="div-border-left-yellow">提示：本篇文章将介绍在不同的电脑下处理博客。</p>
 ##Hexo利用Github分支在不同电脑上写博客
 ### 前言
 hexo部署上去github上面的是存放着的静态资源文件，而如果想要在其他电脑进行git clone下来继续书写文章是不可以的。我们需要做的是继续使用存放Hexo生成的网站原始的文件。可以新建一个仓库来存放hexo的原始文件，但是考虑到如果每个GitHub Pages都需要额外的一个仓库存放这些文件，就显得特别冗余了。
@@ -24,7 +25,7 @@ deploy:
   branch: master
 
 ```
-如果你发现无法 hexo d ，使用下面的命令安装git deployer插件后重试即可。
+如果你发现无法 `hexo d` ，使用下面的命令安装git deployer插件后重试即可。
 ```
 npm install hexo-deployer-git --save
 ```
@@ -33,7 +34,7 @@ npm install hexo-deployer-git --save
 ```
 git checkout hexo
 ```
-上一步的deploy参数正确配置后，文章写完使用 hexo g -d 命令就可以直接部署了，生成的博客静态文件会自动部署到 username.github.io 仓库的 master 分支上，这时候通过浏览器访问 http://username.github.io 就可以看到你的博客页面里。
+上一步的deploy参数正确配置后，文章写完使用 `hexo g -d` 命令就可以直接部署了，生成的博客静态文件会自动部署到 username.github.io 仓库的 master 分支上，这时候通过浏览器访问 http://username.github.io 就可以看到你的博客页面里。
 
 网站页面是保存了，但这时候我们还没有保存我们的hexo原始文件，包括我们的文章md文件，我们千辛万苦修改的主题配置等。。。接下来使用下面的步骤将他们都统统推送到 hexo 分支上去
 ```
@@ -66,7 +67,7 @@ git push origin hexo
 推送上去。
 ##### 新的环境
 到了新的电脑上时，我们需要将项目先下载到本地，然后再进行hexo初始化。
-（记得，不需要hexo init这条指令）。
+（记得，不需要`hexo init`这条指令）。
 ```
 git clone git@github.com:pengpn/pengpn.github.io.git
 
