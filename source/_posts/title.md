@@ -5,6 +5,21 @@ tags: [hexo,github]
 comments: true
 ---
 <p id="div-border-left-blue">提示：本篇文章将介绍如何使用 heox和github 搭建个人博客</p>
+## Hexo简介 
+[hexo](https://hexo.io/)是一个基于Node.js的静态博客框架，可以方便的生成静态网页托管在github和Heroku上。作者是来自台湾的`@tommy351`。
+>A fast, simple & powerful blog framework, powered by Node.js.
+
+## 目的
+想搞一个个人技术博客，写点技术文章记录一下，又不想自己搞站点，怎么办？
+所以借助了`github pages`，它提供给我们`域名`和`空间`，
+
+省事：
+1. **不要服务器**，github免费提供的托管服务
+2. **不要域名**，github同样提供了一个yourname.github.io的域名
+3. **不用写html**，hexo提供了很多开源的博客模板。 
+4. 直接写`markdown`就可以编译成静态页面
+5. `便于维护更新`，换风格直接换模板就行
+
 ## 使用hexo和github搭建个人博客
 ### 一、安装git
 ### 二、安装node.js
@@ -57,23 +72,23 @@ deploy:
   repo: git@github.com:pengpn/pengpn.github.io.git
   branch: master
 ```
-- 执行hexo generate
-- 执行hexo deploy部署
+- 执行`hexo generate`
+- 执行`hexo deploy`部署
 - 我们的博客就已经完全搭建起来了
-- 访问pengpn.github.io
+- 访问`pengpn.github.io`
 
 > 注意：每次修改本地文件后，需要键入hexo generate才能保存。每次使用命令时，都要在C:\Hexo目录下。每次想要上传文件到Github时，就应该先键入hexo generate保存之后，再键入hexo deploy。大概成功之后是酱紫的
 
 
 ### 五、域名绑定
 因为我是在万网上注册的域名，所以这里就是使用阿里云  
-- 点击添加解析按钮，如图一次输入：CNAME、@、Github博客域名。选择保存完成个人域名向个人博客的映射。添加解析后，在浏览器输入我们新注册的域名：
+- 点击添加解析按钮，如图一次输入：`CNAME`、`@`、`Github博客域名`。选择保存完成个人域名向个人博客的映射。添加解析后，在浏览器输入我们新注册的域名：
 ![](http://i2.muimg.com/588926/68274bd7aac1e095.png)
 - 可以看到网站报出了404错误，这说明我们的域名已经成功映射到了Github网站，但是它找不到我们的博客的位置，所以我们需要实现个人博客向个人域名的映射，进入Github博客的仓库：
 ![image](http://upload-images.jianshu.io/upload_images/291600-b616fdfde172b082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 
-- 点击上图上方偏右的Create new file按钮，创建一个文件：
+- 点击上图上方偏右的`Create new file`按钮，创建一个文件：
 
 ![](http://i4.buimg.com/588926/48d84b76ccbf211b.png)
 
