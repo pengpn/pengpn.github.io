@@ -102,7 +102,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/291600-b616fdfde172b082.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://i4.buimg.com/588926/48d84b76ccbf211b.png">
 <meta property="og:image" content="http://i1.piimg.com/588926/64845a166756a19b.png">
-<meta property="og:updated_time" content="2017-05-19T01:47:04.131Z">
+<meta property="og:updated_time" content="2017-05-19T03:23:18.516Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用hexo和github搭建个人博客">
 <meta name="twitter:description" content="提示：本篇文章将介绍如何使用 heox和github 搭建个人博客 Hexo简介hexo是一个基于Node.js的静态博客框架，可以方便的生成静态网页托管在github和Heroku上。作者是来自台湾的@tommy351。  A fast, simple &amp;amp; powerful blog framework, powered by Node.js.  目的想搞一个个人技术博客，写点技术文章记">
@@ -348,7 +348,7 @@
 <blockquote>
 <p>A fast, simple &amp; powerful blog framework, powered by Node.js.</p>
 </blockquote>
-<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>想搞一个个人技术博客，写点技术文章记录一下，又不想自己搞站点，怎么办？<br>所以借助了<code>github pages</code>，它提供给我们<code>域名</code>和<code>空间</code>，</p>
+<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>想搞一个个人技术博客，写点技术文章记录一下，又不想自己搞站点，怎么办？<br>所以借助了<code>github pages</code>，它提供给我们<code>域名</code>和<code>空间</code>，<br><a id="more"></a> </p>
 <p>省事：</p>
 <ol>
 <li><strong>不要服务器</strong>，github免费提供的托管服务</li>
@@ -361,16 +361,15 @@
 <ol>
 <li>Node可以去官网下载，或是在国内下载，由于众所周知的原因，这里放一个<a href="http://nodejs.cn/" target="_blank" rel="external">nodejs.cn</a>的链接</li>
 <li>Node内置npm包，我们之后就可以打git bash使用npm进行安装一些依赖，如果觉得太慢，可以使用淘宝镜像cnpm.  </li>
-<li>Git bash 如果提示npm command not found 请查看用户变量有没加上nodejs的路径 <a id="more"></a> 
-<h4 id="npm安装hexo速度过慢"><a href="#npm安装hexo速度过慢" class="headerlink" title="npm安装hexo速度过慢"></a>npm安装hexo速度过慢</h4></li>
+<li>Git bash 如果提示npm command not found 请查看用户变量有没加上nodejs的路径 </li>
 </ol>
-<ul>
+</blockquote>
+<h4 id="npm安装hexo速度过慢"><a href="#npm安装hexo速度过慢" class="headerlink" title="npm安装hexo速度过慢"></a>npm安装hexo速度过慢</h4><ul>
 <li>由于某些大家都知道的缘故，npm官方源在国内的下载速度极其慢，用官网的npm install hexo-cli -g速度非常感人，所以不推荐这种方式。  </li>
 <li>这里我推荐用淘宝的npm分流——cnpm  </li>
 <li>安装过程很简单：<br>npm install -g cnpm –registry=<a href="https://registry.npm.taobao.org" target="_blank" rel="external">https://registry.npm.taobao.org</a>  </li>
 <li>然后等着装完即可，之后的用法和npm一样，无非是把npm install改成cnpm install,但是速度比之前快了不止一个数量级(不过下文为了方便理解，还是会用默认的npm安装，如果你发现速度不好的话，请自行替换成’cnpm’)</li>
 </ul>
-</blockquote>
 <h3 id="三、安装Hexo"><a href="#三、安装Hexo" class="headerlink" title="三、安装Hexo"></a>三、安装Hexo</h3><ul>
 <li>在任意位置点击鼠标右键，选择Git Bash。</li>
 <li><code>npm install -g hexo-cli</code> 或者 <code>cnpm install -g hexo-cli</code><br>注意：-g是指全局安装hexo。</li>

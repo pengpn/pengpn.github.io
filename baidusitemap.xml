@@ -4,6 +4,25 @@
 
     
   <url>
+    <loc>http://pengpn.me/2017/05/10/title/</loc>
+    <lastmod>2017-05-19T03:23:18.516Z</lastmod>
+    <data>
+        <display>
+        <title>使用hexo和github搭建个人博客</title>
+        <pubTime>2017-05-10T14:16:19.000Z</pubTime>
+        
+        <tag>hexo</tag>
+         
+        <tag>github</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://pengpn.me/2017/05/19/git/</loc>
     <lastmod>2017-05-19T03:21:34.667Z</lastmod>
     <data>
@@ -28,25 +47,6 @@
         <title>Hello World</title>
         <pubTime>2017-05-10T13:34:47.000Z</pubTime>
         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://pengpn.me/2017/05/10/title/</loc>
-    <lastmod>2017-05-19T01:47:04.131Z</lastmod>
-    <data>
-        <display>
-        <title>使用hexo和github搭建个人博客</title>
-        <pubTime>2017-05-10T14:16:19.000Z</pubTime>
-        
-        <tag>hexo</tag>
-         
-        <tag>github</tag>
-         
          
            
         </display>
