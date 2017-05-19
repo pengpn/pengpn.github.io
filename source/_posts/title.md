@@ -12,6 +12,7 @@ comments: true
 ## 目的
 想搞一个个人技术博客，写点技术文章记录一下，又不想自己搞站点，怎么办？
 所以借助了`github pages`，它提供给我们`域名`和`空间`，
+<!--more--> 
 
 省事：
 1. **不要服务器**，github免费提供的托管服务
@@ -26,7 +27,7 @@ comments: true
 > 1. Node可以去官网下载，或是在国内下载，由于众所周知的原因，这里放一个[nodejs.cn](http://nodejs.cn/)的链接
 > 2. Node内置npm包，我们之后就可以打git bash使用npm进行安装一些依赖，如果觉得太慢，可以使用淘宝镜像cnpm.  
 > 3. Git bash 如果提示npm command not found 请查看用户变量有没加上nodejs的路径 
-<!--more--> 
+
 #### npm安装hexo速度过慢
 - 由于某些大家都知道的缘故，npm官方源在国内的下载速度极其慢，用官网的npm install hexo-cli -g速度非常感人，所以不推荐这种方式。  
 - 这里我推荐用淘宝的npm分流——cnpm  
