@@ -74,7 +74,7 @@
 <link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="javascript," />
 
 
 
@@ -90,16 +90,17 @@
 
 
 
-<meta name="description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="description" content="JS模板引擎 ：ArtTemplate为什么需要用到模板引擎我们在做前端开发的时候，有时候经常需要根据后端返回的json数据，然后来生成html，再显示到页面中去。 例如这样子：1234567891011121314151617var data = [    &amp;#123;text: &amp;quot;测试一&amp;quot;&amp;#125;,    &amp;#123;text: &amp;quot;测试二&amp;quot;&amp;#125">
+<meta name="keywords" content="javascript">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hello World">
-<meta property="og:url" content="http://pengpn.me/2017/05/10/hello-world/index.html">
+<meta property="og:title" content="JS模板引擎 ：ArtTemplate">
+<meta property="og:url" content="http://pengpn.me/2017/06/12/artTemplate/index.html">
 <meta property="og:site_name" content="PENGPN">
-<meta property="og:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
-<meta property="og:updated_time" content="2017-05-19T02:31:10.116Z">
+<meta property="og:description" content="JS模板引擎 ：ArtTemplate为什么需要用到模板引擎我们在做前端开发的时候，有时候经常需要根据后端返回的json数据，然后来生成html，再显示到页面中去。 例如这样子：1234567891011121314151617var data = [    &amp;#123;text: &amp;quot;测试一&amp;quot;&amp;#125;,    &amp;#123;text: &amp;quot;测试二&amp;quot;&amp;#125">
+<meta property="og:updated_time" content="2017-06-22T01:58:17.604Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hello World">
-<meta name="twitter:description" content="Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick">
+<meta name="twitter:title" content="JS模板引擎 ：ArtTemplate">
+<meta name="twitter:description" content="JS模板引擎 ：ArtTemplate为什么需要用到模板引擎我们在做前端开发的时候，有时候经常需要根据后端返回的json数据，然后来生成html，再显示到页面中去。 例如这样子：1234567891011121314151617var data = [    &amp;#123;text: &amp;quot;测试一&amp;quot;&amp;#125;,    &amp;#123;text: &amp;quot;测试二&amp;quot;&amp;#125">
 
 
 
@@ -127,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://pengpn.me/2017/05/10/hello-world/"/>
+  <link rel="canonical" href="http://pengpn.me/2017/06/12/artTemplate/"/>
 
 
 
 
 
-  <title>Hello World | PENGPN</title>
+  <title>JS模板引擎 ：ArtTemplate | PENGPN</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -272,7 +273,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://pengpn.me/2017/05/10/hello-world/">
+    <link itemprop="mainEntityOfPage" href="http://pengpn.me/2017/06/12/artTemplate/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="PENGPN">
@@ -289,7 +290,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hello World</h1>
+          <h1 class="post-title" itemprop="name headline">JS模板引擎 ：ArtTemplate</h1>
         
 
         <div class="post-meta">
@@ -301,8 +302,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-05-10T21:34:47+08:00">
-                2017-05-10
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-12T09:55:04+08:00">
+                2017-06-12
               </time>
             
 
@@ -336,15 +337,26 @@
       
 
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+        <h1 id="JS模板引擎-：ArtTemplate"><a href="#JS模板引擎-：ArtTemplate" class="headerlink" title="JS模板引擎 ：ArtTemplate"></a>JS模板引擎 ：ArtTemplate</h1><h2 id="为什么需要用到模板引擎"><a href="#为什么需要用到模板引擎" class="headerlink" title="为什么需要用到模板引擎"></a>为什么需要用到模板引擎</h2><p>我们在做前端开发的时候，有时候经常需要根据后端返回的json数据，然后来生成html，再显示到页面中去。</p>
+<p>例如这样子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line">var data = [</div><div class="line">    &#123;text: &quot;测试一&quot;&#125;,</div><div class="line">    &#123;text: &quot;测试二&quot;&#125;,</div><div class="line">    &#123;text: &quot;测试三&quot;&#125;,</div><div class="line">    &#123;text: &quot;测试四&quot;&#125;</div><div class="line">];</div><div class="line">function generateList(data) &#123;</div><div class="line">    var listHtml = &quot;&quot;;</div><div class="line">    listHtml += &quot;&lt;ul&gt;&quot;;</div><div class="line">    for (var i = 0, len = data.length; i &lt; len; i++) &#123;</div><div class="line">        listHtml += &quot;&lt;li&gt;&quot;;</div><div class="line">        listHtml += data.text;</div><div class="line">        listHtml += &quot;&lt;/li&gt;&quot;;</div><div class="line">    &#125;</div><div class="line">    listHtml += &quot;&lt;/ul&gt;&quot;;</div><div class="line">    return listHtml;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<a id="more"></a> 
+<p>但是，这种通过字符串拼接的方式，比较简单的还好，如果结构比较复杂，拼接的时候还需要注意引号之间的嵌套，这样的代码维护起来比较困难。</p>
+<p>一旦需求发生变化，这里修改起来也是很麻烦。所以我们需要模板引擎来改善这种情况。</p>
+<p>例如上面的例子，如果使用模板引擎则可以是这样子：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">var data = &#123;</div><div class="line">    list:[</div><div class="line">        &#123;text: &quot;测试一&quot;&#125;,</div><div class="line">        &#123;text: &quot;测试二&quot;&#125;,</div><div class="line">        &#123;text: &quot;测试三&quot;&#125;,</div><div class="line">        &#123;text: &quot;测试四&quot;&#125;</div><div class="line">    ]</div><div class="line">&#125;;</div><div class="line">&lt;script id=&quot;test&quot; type=&quot;text/html&quot;&gt;</div><div class="line">    &lt;ul&gt;</div><div class="line">        &lt;% for (var i = 0; i &lt; list.length; i ++) &#123; %&gt;</div><div class="line">        &lt;li&gt;&lt;%= list[i].text %&gt;&lt;/li&gt;</div><div class="line">        &lt;% &#125; %&gt;</div><div class="line">    &lt;/ul&gt;</div><div class="line">&lt;/script&gt;</div></pre></td></tr></table></figure></p>
+<p>不知道你有没有感觉简单一点呢，反正我是感觉更清晰明了一点。</p>
+<h2 id="artTemplate的介绍"><a href="#artTemplate的介绍" class="headerlink" title="artTemplate的介绍"></a>artTemplate的介绍</h2><p>artTemplate 是新一代 javascript 模板引擎，它采用预编译方式让性能有了质的飞跃，并且充分利用 javascript 引擎特性，使得其性能无论在前端还是后端都有极其出色的表现。在 chrome 下渲染效率测试中分别是知名引擎 Mustache 与 micro tmpl 的 25 、 32 倍。</p>
+<p>除了性能优势外，调试功能也值得一提。模板调试器可以精确定位到引发渲染错误的模板语句，解决了编写模板过程中无法调试的痛苦，让开发变得高效，也避免了因为单个模板出错导致整个应用崩溃的情况发生。</p>
+<p>artTemplate 这一切都在 1.7kb(gzip) 中实现！</p>
+<p>这是artTemplate的官网，使用方法相信有一定js基础的，看了文档之后都能够使用。这里就不详细介绍了<br><a href="https://github.com/aui/art-template" target="_blank" rel="external">官网</a></p>
+<h2 id="artTemplate-模板引擎的基本原理"><a href="#artTemplate-模板引擎的基本原理" class="headerlink" title="artTemplate 模板引擎的基本原理"></a>artTemplate 模板引擎的基本原理</h2><p>模板引擎其实做的就是两件事。</p>
+<ol>
+<li>根据一定的规则，解析我们所定义的模板<br>这里，我们将模板定义在script标签中，然后，当我们使用到某个模板的时候，引擎会根据我们提供的ID，解析相应的模板，此时会返回一个渲染函数。（为了性能，还会将这个渲染函数缓存起来）<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div></pre></td><td class="code"><pre><div class="line">(function($data,$filename) &#123;</div><div class="line">    &apos;use strict&apos;;</div><div class="line">    var i=$data.i,list=$data.list,$out=&apos;&apos;;$out+=&apos;&lt;ul&gt;\n&apos;;</div><div class="line">    for (var i = 0; i &lt; list.length; i ++) &#123;</div><div class="line">        $out+=&apos;\n        &lt;li&gt;&apos;;</div><div class="line">        $out+= list[i].text;</div><div class="line">        $out+=&apos;&lt;/li&gt;\n&apos;;</div><div class="line">    &#125;</div><div class="line">    $out+=&apos;\n&lt;/ul&gt;&apos;;</div><div class="line">    return new String($out);</div><div class="line">&#125;)</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<p>上述代码，我已经删除了一些不必要的信息，解析模板之后，会返回一个这样的渲染函数。也就是说，其实模板引擎就是将我们平时用的字符串拼接的事情给做了。<br>至于，引擎是如何解析的，在下一篇我会详细介绍</p>
+<ol>
+<li>根据数据以及模板生成html（其实背后也是用的字符串拼接）<br>这里，会根据用户所传的数据，然后调用上一步返回的渲染函数。得到我们想要的结果。</li>
+</ol>
 
       
     </div>
@@ -372,6 +384,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/javascript/" rel="tag"># javascript</a>
+          
+        </div>
+      
 
       
         
@@ -381,15 +399,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/05/19/git/" rel="next" title="必须要会的Git基本使用及常用命令操作">
+                <i class="fa fa-chevron-left"></i> 必须要会的Git基本使用及常用命令操作
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/05/10/title/" rel="prev" title="使用hexo和github搭建个人博客">
-                使用hexo和github搭建个人博客 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -544,7 +562,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Quick-Start"><span class="nav-number">1.</span> <span class="nav-text">Quick Start</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Create-a-new-post"><span class="nav-number">1.1.</span> <span class="nav-text">Create a new post</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Run-server"><span class="nav-number">1.2.</span> <span class="nav-text">Run server</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Generate-static-files"><span class="nav-number">1.3.</span> <span class="nav-text">Generate static files</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Deploy-to-remote-sites"><span class="nav-number">1.4.</span> <span class="nav-text">Deploy to remote sites</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#JS模板引擎-：ArtTemplate"><span class="nav-number">1.</span> <span class="nav-text">JS模板引擎 ：ArtTemplate</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#为什么需要用到模板引擎"><span class="nav-number">1.1.</span> <span class="nav-text">为什么需要用到模板引擎</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#artTemplate的介绍"><span class="nav-number">1.2.</span> <span class="nav-text">artTemplate的介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#artTemplate-模板引擎的基本原理"><span class="nav-number">1.3.</span> <span class="nav-text">artTemplate 模板引擎的基本原理</span></a></li></ol></li></ol></div>
             
 
           </div>
